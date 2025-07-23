@@ -1,0 +1,11 @@
+# Ignore WordPress core
+/wp-admin/
+/wp-includes/
+# Ignore uploads and config
+/wp-content/uploads/
+wp-config.php
+.htaccess
+
+# Track these (remove from ignore if added above)
+!/wp-content/themes/hb-theme/
+!/wp-content/plugins/your-plugin/
