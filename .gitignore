@@ -7,5 +7,5 @@ wp-config.php
 .htaccess
 
 # Track these (remove from ignore if added above)
-!/wp-content/themes/hb-theme/
-!/wp-content/plugins/your-plugin/
+!/wp-content/themes/hb/
+#!/wp-content/plugins/your-plugin/
