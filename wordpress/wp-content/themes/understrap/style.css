@@ -28,30 +28,129 @@ WP Bootstrap Navwalker by Edward McIntyre & William Patton: https://github.com/t
 Do not modify the parent Understrap theme. Instead, download a copy of the Understrap Child starter theme and do all your development within the child theme.
 Full developer documentation: https://docs.understrap.com
 */
-:root{
+:root {
     --gap: 2em;
 }
-/* WP STRUCTURE */
+
+/* ===== WordPress Structure Adjustments ===== */
 #full-width-page-wrapper {
     padding: 0;
 }
 
-#wrapper-hero.wrapper{
-    display:none;
+/* ===== Branding & Colours ===== */
+.bg-primary {
+    background-color: #28a745 !important; /* Bootstrap green */
 }
 
-h2, .spacing  {
+.orange { color: orange; }
+.blue { color: blue; }
+.green { color: green; }
+
+/* ===== Headings & Spacing ===== */
+h2, .spacing {
     margin: var(--gap);
 }
-/*Fast colour classes*/
-.orange {
-    color: orange;
+
+.entry-title {
+    display: none;
 }
 
-.blue {
-    color: blue;
+/* ===== Navbar & Logo ===== */
+.navbar-brand img {
+    max-width: 100px;
+    display: block;
 }
 
-.green {
-    color: green;
+.navbar-brand {
+    margin-left: -70px;
+}
+
+.navbar-nav {
+    display: flex;
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00;
+}
+
+/* Menu text (overriding default) */
+.nav-link {
+    font-size: 1.1rem; 
+    font-weight: bold;
+}
+
+/* ===== Product List Styling ===== */
+.product-list .item {
+    border: 1px #ddd solid;
+    margin: 1em;
+    text-decoration: none;
+    color: #000;
+}
+
+.product-list .item .product-name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.product-list .item .brand {
+    font-size: 1em;
+}
+
+.product-list .item .category {
+    font-size: 2em;
+}
+
+/* ===== Footer Styling ===== */
+#wrapper-footer {
+    background-color: #28a745;
+    width: 100%;
+}
+
+.site-footer .site-info {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-menu li a:hover {
+    color: #ffcc00; /* gold hover */
+}
+
+.page_item {
+    list-style: none;
+}
+
+/* ===== Block & Image Styling ===== */
+.wp-block-column {
+    text-align: center;
+}
+
+.wp-block-column img {
+    display: inline-block; /* Prevents full-width stretch */
 }
