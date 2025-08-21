@@ -6,7 +6,6 @@ This document explains how to develop, test, and deploy updates to the Lyteforce
 1. **Local Development**
    - Set up a local WordPress environment (e.g., LocalWP, MAMP, XAMPP).
    - Install the Understrap parent theme.
-   - Activate the `Cake It Child Theme` from this repo.
    - Import the current database and uploads from staging to match content and layout.
 
 2. **Version Control**
