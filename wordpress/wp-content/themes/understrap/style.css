@@ -42,9 +42,17 @@ Full developer documentation: https://docs.understrap.com
     background-color: #28a745 !important; /* Bootstrap green */
 }
 
-.orange { color: orange; }
-.blue { color: blue; }
-.green { color: green; }
+.orange {
+    color: orange;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
 
 /* ===== Headings & Spacing ===== */
 h2, .spacing {
@@ -59,10 +67,6 @@ h2, .spacing {
 .navbar-brand img {
     max-width: 100px;
     display: block;
-}
-
-.navbar-brand {
-    margin-left: -70px;
 }
 
 .navbar-nav {
@@ -82,7 +86,7 @@ h2, .spacing {
 
 /* Menu text (overriding default) */
 .nav-link {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
