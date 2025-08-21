@@ -15358,11 +15358,19 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
+:root{
+    --gap: 2em;
+}
 /* WP STRUCTURE */
 #full-width-page-wrapper {
     padding: 0;
 }
+
 #wrapper-hero.wrapper{
     display:none;
+}
+
+h2, .spacing  {
+    margin: var(--gap);
 }
 /*# sourceMappingURL=theme.css.map */
